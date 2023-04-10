@@ -40,22 +40,40 @@
     },
     "typography": {
       "lg": {
-        "value": {
-          "fontFamily": "'Inter', Helvetica, Arial, sans-serif",
-          "fontWeight": 400,
-          "fontSize": "16px",
-          "textCase": "none"
+        "fontFamily": {
+          "value": "'Inter', Helvetica, Arial, sans-serif",
+          "type": "fontFamilies"
         },
-        "type": "typography"
+        "fontWeight": {
+          "value": 400,
+          "type": "fontWeights"
+        },
+        "fontSize": {
+          "value": "16px",
+          "type": "fontSizes"
+        },
+        "textCase": {
+          "value": "none",
+          "type": "textCase"
+        }
       },
       "sm": {
-        "value": {
-          "fontFamily": "'Inter', Helvetica, Arial, sans-serif",
-          "fontWeight": 400,
-          "fontSize": "12px",
-          "textCase": "none"
+        "fontFamily": {
+          "value": "'Inter', Helvetica, Arial, sans-serif",
+          "type": "fontFamilies"
         },
-        "type": "typography"
+        "fontWeight": {
+          "value": 400,
+          "type": "fontWeights"
+        },
+        "fontSize": {
+          "value": "12px",
+          "type": "fontSizes"
+        },
+        "textCase": {
+          "value": "none",
+          "type": "textCase"
+        }
       }
     },
     "font-family": {

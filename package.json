@@ -1,0 +1,23 @@
+{
+  "name": "practice-token-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build.js",
+    "clean": "rm -rf output"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JooelBks2000/practice-token-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JooelBks2000/practice-token-demo/issues"
+  },
+  "homepage": "https://github.com/JooelBks2000/practice-token-demo#readme",
+  "devDependencies": {
+    "style-dictionary": "^3.7.2"
+  }
+}
