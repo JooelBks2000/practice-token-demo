@@ -506,11 +506,11 @@
   "brand-a": {
     "color-primary": {
       "default": {
-        "value": "{color-base-red.60}",
+        "value": "{color-base-green.60}",
         "type": "color"
       },
       "hover": {
-        "value": "{color-base-red.90}",
+        "value": "{color-base-green.90}",
         "type": "color"
       },
       "disabled": {
