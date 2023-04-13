@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./build.js",
-    "clean": "rm -rf output"
+    "clean": "rm -rf output",
+    "export":"node ./export.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/JooelBks2000/practice-token-demo#readme",
   "devDependencies": {
+    "figma-api-exporter": "^0.0.2",
     "style-dictionary": "^3.7.2"
   }
 }
