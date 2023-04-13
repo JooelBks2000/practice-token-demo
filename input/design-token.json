@@ -586,11 +586,11 @@
   "brand-b": {
     "color-primary": {
       "default": {
-        "value": "{color-base-pink.60}",
+        "value": "{color-base-blue.60}",
         "type": "color"
       },
       "hover": {
-        "value": "{color-base-pink.70}",
+        "value": "{color-base-blue.90}",
         "type": "color"
       },
       "disabled": {
