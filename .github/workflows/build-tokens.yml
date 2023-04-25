@@ -9,10 +9,11 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
       - run: npm install
-      - run: npx token-transformer input/design-token.json input/base.json base
-      - run: npx token-transformer input/design-token.json input/brand-a.json base,brand-a base --expandTypography=true
-      - run: npx token-transformer input/design-token.json input/brand-b.json base,brand-b base --expandTypography=true
-      - run: node build.js
+      - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/base.json base
+      - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/brand-a.json base,brand-a base --expandTypography=true
+      - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/brand-b.json base,brand-b base --expandTypography=true
+      - run: node figamTokensToCss/build.js
+      - run: ts-node figamAssetsToComponents/generate.ts
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: build tokens
@@ -24,10 +25,20 @@ jobs:
         with:
           personal_token: ${{ secrets.GH_PAT }}
           src_branch: main
-          src_path: output/.
+          src_path: figamTokensToCss/output/.
           dst_owner: JooelBks2000
           dst_repo_name: vite-vue-ts-storybook
           dst_branch: main
           dst_path: src/css/.
           username: JooelBks2000
           commit_message: copy css tokens
+        with:
+          personal_token: ${{ secrets.GH_PAT }}
+          src_branch: main
+          src_path: figamAssetsToComponents/assets/components/.
+          dst_owner: JooelBks2000
+          dst_repo_name: vite-vue-ts-storybook
+          dst_branch: main
+          dst_path: src/components/Icon/.
+          username: JooelBks2000
+          commit_message: copy svg components

@@ -1,0 +1,13 @@
+{
+    "include": [
+        "figamAssetsToComponents",
+        "vue.d.ts"
+    ],
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node"
+    }
+}
