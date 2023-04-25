@@ -1,11 +1,11 @@
 {
   "color-primary": {
     "default": {
-      "value": "#0f992e",
+      "value": "#c71212",
       "type": "color"
     },
     "hover": {
-      "value": "#085419",
+      "value": "#6d0a0a",
       "type": "color"
     },
     "disabled": {
