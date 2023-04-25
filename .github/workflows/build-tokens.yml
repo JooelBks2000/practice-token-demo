@@ -26,7 +26,7 @@ jobs:
           src_branch: main
           src_path: output/.
           dst_owner: JooelBks2000
-          dst_repo_name: stencil-storybook-token-demo
+          dst_repo_name: vite-vue-ts-storybook
           dst_branch: main
           dst_path: src/css/.
           username: JooelBks2000
