@@ -13,7 +13,7 @@ jobs:
       - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/brand-a.json base,brand-a base --expandTypography=true
       - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/brand-b.json base,brand-b base --expandTypography=true
       - run: node figamTokensToCss/build.js
-      - run: ts-node figamAssetsToComponents/generate.ts
+      - run: npx ts-node figamAssetsToComponents/generate.ts
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: build tokens
