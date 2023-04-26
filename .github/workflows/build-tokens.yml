@@ -36,7 +36,7 @@ jobs:
         with:
           personal_token: ${{ secrets.GH_PAT }}
           src_branch: main
-          src_path: figamAssetsToComponents/assets/components/.
+          src_path: figamAssetsToComponents/assets/outputComponents/.
           dst_owner: JooelBks2000
           dst_repo_name: vite-vue-ts-storybook
           dst_branch: main
