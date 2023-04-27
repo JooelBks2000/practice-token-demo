@@ -12,6 +12,7 @@ import {
 
 const ICONS_DIRECTORY_PATH = path.resolve(__dirname, "./assets/components");
 const SVG_DIRECTORY_PATH = path.resolve(__dirname, "./assets/svgs");
+const SVG_FROM_LOCAL = path.resolve(__dirname, './assets/locals');
 const INDEX_DIRECTORY_PATH = path.resolve(__dirname, "./assets");
 
 // Load environment variables
@@ -38,9 +39,18 @@ const exporter = figmaApiExporter(FIGMA_API_TOKEN);
 exporter
   .getSvgs({
     fileId: FIGMA_FILE_ID,
+    // choose your current page
     canvas: FIGMA_CANVAS,
   })
   .then(async (svgsData) => {
+    // 2.1 Dowload SVG files into Files
+    console.log(chalk.blueBright("-> Downloading SVG Files"))
+    exporter.downloadSvgs({
+      saveDirectory: SVG_DIRECTORY_PATH,
+      svgsData: svgsData.svgs,
+      lastModified: svgsData.lastModified,
+      clearDirectory:true
+    })
     // 3. Download SVG files from Figma
     console.log(chalk.blueBright("-> Downloading SVG code"));
     const downloadedSVGsData = await downloadSVGsData(svgsData.svgs);
@@ -49,12 +59,12 @@ exporter
     console.log(chalk.blueBright("-> Reading manually added SVGs"));
     let manuallyAddedSvgs: { data: string; name: string }[] = [];
     const svgFiles = fs
-      .readdirSync(SVG_DIRECTORY_PATH)
+      .readdirSync(SVG_FROM_LOCAL)
       // Filter out hidden files (e.g. .DS_STORE)
       .filter((item) => !/(^|\/)\.[^/.]/g.test(item));
     svgFiles.forEach((fileName) => {
       const svgData = fs.readFileSync(
-        path.resolve(SVG_DIRECTORY_PATH, fileName),
+        path.resolve(SVG_FROM_LOCAL, fileName),
         "utf-8"
       );
       manuallyAddedSvgs.push({
@@ -62,7 +72,7 @@ exporter
         name: toPascalCase(fileName.replace(/svg/i, "")),
       });
     });
-    const allSVGs = [...downloadedSVGsData, ...manuallyAddedSvgs];
+    const allSVGs = [...downloadedSVGsData,...manuallyAddedSvgs];
 
     // 5. Convert SVG to React Components
     console.log(chalk.cyanBright("-> Converting to Vue components"));
