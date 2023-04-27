@@ -96,7 +96,7 @@ exporter
       const newViewBox = viewBox.slice(8)
       delete(newSvgData[0])
       delete(newSvgData[newSvgData.length - 2])
-      iconNameList.push({ name: svg.name, component: componentName });
+      iconNameList.push({ name: componentName, component: componentName });
       // 6. Write generated component to file system
       fs.ensureDirSync(ICONS_DIRECTORY_PATH);
       fs.outputFileSync(
