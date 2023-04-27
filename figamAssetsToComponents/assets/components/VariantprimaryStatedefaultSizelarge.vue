@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <svg viewBox="0 0 1024 1024" :width="width" :height="height">
+  <svg viewBox="0 0 128 36" fill="none" xmlns="http://www.w3.org/2000/svg" :width="width" :height="height">
     <rect width="128" height="36" rx="18" fill="#C71212"/>
   </svg>
 </template>
