@@ -1,6 +1,8 @@
 <!-- eslint-disable -->
 <template>
-  <component :is="config[props.name]" :width="props.width" :height="props.height" />
+  <component     
+    v-for="item in list"
+    :key="item" :is="config[item]" :width="props.width" :height="props.height" />
 </template>
 <script setup lang="ts">
 import { defineProps } from 'vue';
@@ -71,4 +73,44 @@ const config = {
   'VariantTertiaryStatedisabledSizesmall': VariantTertiaryStatedisabledSizesmall,
   'Group8612': Group8612,
 };
+
+const list = [  
+  'VariantprimaryStatedefaultSizelarge',
+  
+  'VariantprimaryStatedefaultSizesmall',
+  
+  'VariantsecondaryStatedefaultSizelarge',
+  
+  'VariantsecondaryStatedefaultSizesmall',
+  
+  'VariantTertiaryStatedefaultSizelarge',
+  
+  'VariantTertiaryStatedefaultSizesmall',
+  
+  'VariantsecondaryStatehoverSizelarge',
+  
+  'VariantsecondaryStatehoverSizesmall',
+  
+  'VariantprimaryStatehoverSizelarge',
+  
+  'VariantprimaryStatehoverSizesmall',
+  
+  'VariantsecondaryStatedisabledSizelarge',
+  
+  'VariantsecondaryStatedisabledSizesmall',
+  
+  'VariantTertiaryStatehoverSizelarge',
+  
+  'VariantTertiaryStatehoverSizesmall',
+  
+  'VariantprimaryStatedisabledSizelarge',
+  
+  'VariantprimaryStatedisabledSizesmall',
+  
+  'VariantTertiaryStatedisabledSizelarge',
+  
+  'VariantTertiaryStatedisabledSizesmall',
+  
+  'Group8612',
+  ]
 </script>
