@@ -32,7 +32,7 @@ jobs:
           dst_path: src/css/.
           username: JooelBks2000
           commit_message: copy css tokens
-    copy_svg_components:
+  copy_svg_components:
     runs-on: ubuntu-latest
     needs: [build_tokens]
     steps:
