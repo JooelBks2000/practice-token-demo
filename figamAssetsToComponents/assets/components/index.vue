@@ -26,24 +26,24 @@ import Group8612 from './Group8612.vue';
 
 const props = defineProps<{
   name:
-    | 'variant&#x3D;primary, state&#x3D;default, size&#x3D;Large'
-      | 'variant&#x3D;primary, state&#x3D;default, size&#x3D;Small'
-      | 'variant&#x3D;secondary, state&#x3D;default, size&#x3D;Large'
-      | 'variant&#x3D;secondary, state&#x3D;default, size&#x3D;Small'
-      | 'variant&#x3D;Tertiary, state&#x3D;default, size&#x3D;Large'
-      | 'variant&#x3D;Tertiary, state&#x3D;default, size&#x3D;Small'
-      | 'variant&#x3D;secondary, state&#x3D;hover, size&#x3D;Large'
-      | 'variant&#x3D;secondary, state&#x3D;hover, size&#x3D;Small'
-      | 'variant&#x3D;primary, state&#x3D;hover, size&#x3D;Large'
-      | 'variant&#x3D;primary, state&#x3D;hover, size&#x3D;Small'
-      | 'variant&#x3D;secondary, state&#x3D;disabled, size&#x3D;Large'
-      | 'variant&#x3D;secondary, state&#x3D;disabled, size&#x3D;Small'
-      | 'variant&#x3D;Tertiary, state&#x3D;hover, size&#x3D;Large'
-      | 'variant&#x3D;Tertiary, state&#x3D;hover, size&#x3D;Small'
-      | 'variant&#x3D;primary, state&#x3D;disabled, size&#x3D;Large'
-      | 'variant&#x3D;primary, state&#x3D;disabled, size&#x3D;Small'
-      | 'variant&#x3D;Tertiary, state&#x3D;disabled, size&#x3D;Large'
-      | 'variant&#x3D;Tertiary, state&#x3D;disabled, size&#x3D;Small'
+    | 'VariantprimaryStatedefaultSizelarge'
+      | 'VariantprimaryStatedefaultSizesmall'
+      | 'VariantsecondaryStatedefaultSizelarge'
+      | 'VariantsecondaryStatedefaultSizesmall'
+      | 'VariantTertiaryStatedefaultSizelarge'
+      | 'VariantTertiaryStatedefaultSizesmall'
+      | 'VariantsecondaryStatehoverSizelarge'
+      | 'VariantsecondaryStatehoverSizesmall'
+      | 'VariantprimaryStatehoverSizelarge'
+      | 'VariantprimaryStatehoverSizesmall'
+      | 'VariantsecondaryStatedisabledSizelarge'
+      | 'VariantsecondaryStatedisabledSizesmall'
+      | 'VariantTertiaryStatehoverSizelarge'
+      | 'VariantTertiaryStatehoverSizesmall'
+      | 'VariantprimaryStatedisabledSizelarge'
+      | 'VariantprimaryStatedisabledSizesmall'
+      | 'VariantTertiaryStatedisabledSizelarge'
+      | 'VariantTertiaryStatedisabledSizesmall'
       | 'Group8612'
   ;
   width?: string | number;
@@ -51,24 +51,24 @@ const props = defineProps<{
 }>();
 
 const config = {
-  'variant&#x3D;primary, state&#x3D;default, size&#x3D;Large': VariantprimaryStatedefaultSizelarge,
-  'variant&#x3D;primary, state&#x3D;default, size&#x3D;Small': VariantprimaryStatedefaultSizesmall,
-  'variant&#x3D;secondary, state&#x3D;default, size&#x3D;Large': VariantsecondaryStatedefaultSizelarge,
-  'variant&#x3D;secondary, state&#x3D;default, size&#x3D;Small': VariantsecondaryStatedefaultSizesmall,
-  'variant&#x3D;Tertiary, state&#x3D;default, size&#x3D;Large': VariantTertiaryStatedefaultSizelarge,
-  'variant&#x3D;Tertiary, state&#x3D;default, size&#x3D;Small': VariantTertiaryStatedefaultSizesmall,
-  'variant&#x3D;secondary, state&#x3D;hover, size&#x3D;Large': VariantsecondaryStatehoverSizelarge,
-  'variant&#x3D;secondary, state&#x3D;hover, size&#x3D;Small': VariantsecondaryStatehoverSizesmall,
-  'variant&#x3D;primary, state&#x3D;hover, size&#x3D;Large': VariantprimaryStatehoverSizelarge,
-  'variant&#x3D;primary, state&#x3D;hover, size&#x3D;Small': VariantprimaryStatehoverSizesmall,
-  'variant&#x3D;secondary, state&#x3D;disabled, size&#x3D;Large': VariantsecondaryStatedisabledSizelarge,
-  'variant&#x3D;secondary, state&#x3D;disabled, size&#x3D;Small': VariantsecondaryStatedisabledSizesmall,
-  'variant&#x3D;Tertiary, state&#x3D;hover, size&#x3D;Large': VariantTertiaryStatehoverSizelarge,
-  'variant&#x3D;Tertiary, state&#x3D;hover, size&#x3D;Small': VariantTertiaryStatehoverSizesmall,
-  'variant&#x3D;primary, state&#x3D;disabled, size&#x3D;Large': VariantprimaryStatedisabledSizelarge,
-  'variant&#x3D;primary, state&#x3D;disabled, size&#x3D;Small': VariantprimaryStatedisabledSizesmall,
-  'variant&#x3D;Tertiary, state&#x3D;disabled, size&#x3D;Large': VariantTertiaryStatedisabledSizelarge,
-  'variant&#x3D;Tertiary, state&#x3D;disabled, size&#x3D;Small': VariantTertiaryStatedisabledSizesmall,
+  'VariantprimaryStatedefaultSizelarge': VariantprimaryStatedefaultSizelarge,
+  'VariantprimaryStatedefaultSizesmall': VariantprimaryStatedefaultSizesmall,
+  'VariantsecondaryStatedefaultSizelarge': VariantsecondaryStatedefaultSizelarge,
+  'VariantsecondaryStatedefaultSizesmall': VariantsecondaryStatedefaultSizesmall,
+  'VariantTertiaryStatedefaultSizelarge': VariantTertiaryStatedefaultSizelarge,
+  'VariantTertiaryStatedefaultSizesmall': VariantTertiaryStatedefaultSizesmall,
+  'VariantsecondaryStatehoverSizelarge': VariantsecondaryStatehoverSizelarge,
+  'VariantsecondaryStatehoverSizesmall': VariantsecondaryStatehoverSizesmall,
+  'VariantprimaryStatehoverSizelarge': VariantprimaryStatehoverSizelarge,
+  'VariantprimaryStatehoverSizesmall': VariantprimaryStatehoverSizesmall,
+  'VariantsecondaryStatedisabledSizelarge': VariantsecondaryStatedisabledSizelarge,
+  'VariantsecondaryStatedisabledSizesmall': VariantsecondaryStatedisabledSizesmall,
+  'VariantTertiaryStatehoverSizelarge': VariantTertiaryStatehoverSizelarge,
+  'VariantTertiaryStatehoverSizesmall': VariantTertiaryStatehoverSizesmall,
+  'VariantprimaryStatedisabledSizelarge': VariantprimaryStatedisabledSizelarge,
+  'VariantprimaryStatedisabledSizesmall': VariantprimaryStatedisabledSizesmall,
+  'VariantTertiaryStatedisabledSizelarge': VariantTertiaryStatedisabledSizelarge,
+  'VariantTertiaryStatedisabledSizesmall': VariantTertiaryStatedisabledSizesmall,
   'Group8612': Group8612,
 };
 </script>
