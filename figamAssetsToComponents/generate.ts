@@ -8,6 +8,7 @@ import {
   createIndex,
   downloadSVGsData,
   toPascalCase,
+  getTemplate
 } from "./utils";
 
 const ICONS_DIRECTORY_PATH = path.resolve(__dirname, "./assets/components");
@@ -74,33 +75,48 @@ exporter
     });
     const allSVGs = [...downloadedSVGsData,...manuallyAddedSvgs];
 
+    //获取模版
+    const iconTemplate = getTemplate("./templates/Icon.hbs");
+    const entryTemplate = getTemplate("./templates/entry.hbs");
+
     // 5. Convert SVG to React Components
     console.log(chalk.cyanBright("-> Converting to Vue components"));
+
+    let iconNameList: Array<{ name: string; component: string }> = [];
     allSVGs.forEach((svg) => {
       const svgCode = svg.data;
       const componentName = toPascalCase(svg.name);
       const componentFileName = `${componentName}.vue`;
 
       // Converts SVG code into React code using SVGR library
-      const componentCode = `<template>
-      ${svgCode}
-      </template>`;
-
+      // Todo:这里的处理很粗糙，暂时只是为了实现的目的
+      const newSvgData = svgCode.split('\n')
+      //这里来处理多余的标签信息
+      const viewBox = newSvgData[0].slice(newSvgData[0].indexOf('viewBox='),newSvgData[0].indexOf('>'))
+      const newViewBox = viewBox.slice(8)
+      delete(newSvgData[0])
+      delete(newSvgData[newSvgData.length - 2])
+      iconNameList.push({ name: svg.name, component: componentName });
       // 6. Write generated component to file system
       fs.ensureDirSync(ICONS_DIRECTORY_PATH);
       fs.outputFileSync(
         path.resolve(ICONS_DIRECTORY_PATH, componentFileName),
-        componentCode
+        iconTemplate({ svgCode:newSvgData.join(',').replace(/,/g, ""),viewBox:newViewBox })
       );
     });
 
     // 7. Generate index.ts
     console.log(chalk.yellowBright("-> Generating index file"));
-    createIndex({
-      componentsDirectoryPath: ICONS_DIRECTORY_PATH,
-      indexDirectoryPath: INDEX_DIRECTORY_PATH,
-      indexFileName: "index.ts",
-    });
+
+    fs.writeFileSync(
+      `${ICONS_DIRECTORY_PATH}/index.vue`,
+      entryTemplate({ iconNameList })
+    );
+    // createIndex({
+    //   componentsDirectoryPath: ICONS_DIRECTORY_PATH,
+    //   indexDirectoryPath: INDEX_DIRECTORY_PATH,
+    //   indexFileName: "index.ts",
+    // });
 
     console.log(chalk.greenBright("-> All done! ✅"));
   })
