@@ -69,7 +69,7 @@ function getStyleDictionaryConfig(theme) {
         "files": [{
             "destination": `${theme}.css`,
             "format": "css/variables",
-            "selector": `.${theme}-theme`
+            "selector": `.${theme}`
           }]
       }
     }
@@ -80,7 +80,7 @@ console.log('Build started...');
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
 
-['base', 'brand-a', 'brand-b'].map(function (theme) {
+['base', 'ves', 'cfm'].map(function (theme) {
 
     console.log('\n==============================================');
     console.log(`\nProcessing: [${theme}]`);
