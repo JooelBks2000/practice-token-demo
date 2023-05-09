@@ -54,6 +54,7 @@ exporter
     })
     // 3. Download SVG files from Figma
     console.log(chalk.blueBright("-> Downloading SVG code"));
+    console.log(svgsData)
     const downloadedSVGsData = await downloadSVGsData(svgsData.svgs);
 
     // 4. Read manually added SVGs data

@@ -503,7 +503,7 @@
       }
     }
   },
-  "brand-a": {
+  "ves": {
     "color-primary": {
       "default": {
         "value": "{color-base-red.60}",
@@ -583,7 +583,7 @@
       }
     }
   },
-  "brand-b": {
+  "cfm": {
     "color-primary": {
       "default": {
         "value": "{color-base-blue.60}",
@@ -667,8 +667,8 @@
   "$metadata": {
     "tokenSetOrder": [
       "base",
-      "brand-a",
-      "brand-b"
+      "ves",
+      "cfm"
     ]
   }
 }
