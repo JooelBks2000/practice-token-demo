@@ -59,17 +59,17 @@ StyleDictionaryPackage.registerTransform({
 function getStyleDictionaryConfig(theme) {
   return {
     "source": [
-      `input/${theme}.json`,
+      `figamTokensToCss/input/${theme}.json`,
     ],
     "platforms": {
       "web": {
         "transforms": 
           ["attribute/cti", "name/cti/kebab", "sizes/px", "size/pxToRem"],
-        "buildPath": `output/`,
+        "buildPath": `figamTokensToCss/output/`,
         "files": [{
             "destination": `${theme}.css`,
             "format": "css/variables",
-            "selector": `.${theme}`
+            "selector": `.${theme}-theme`
           }]
       }
     }
