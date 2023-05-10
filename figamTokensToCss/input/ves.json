@@ -77,7 +77,7 @@
       }
     },
     "font-family": {
-      "value": "Baskerville",
+      "value": "'Inter', Helvetica, Arial, sans-serif",
       "type": "fontFamilies"
     }
   },
