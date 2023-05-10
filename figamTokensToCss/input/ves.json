@@ -41,7 +41,7 @@
     "typography": {
       "lg": {
         "fontFamily": {
-          "value": "'Inter', Helvetica, Arial, sans-serif",
+          "value": "Baskerville",
           "type": "fontFamilies"
         },
         "fontWeight": {
@@ -59,7 +59,7 @@
       },
       "sm": {
         "fontFamily": {
-          "value": "'Inter', Helvetica, Arial, sans-serif",
+          "value": "Baskerville",
           "type": "fontFamilies"
         },
         "fontWeight": {
@@ -77,7 +77,7 @@
       }
     },
     "font-family": {
-      "value": "'Inter', Helvetica, Arial, sans-serif",
+      "value": "Baskerville",
       "type": "fontFamilies"
     }
   },
