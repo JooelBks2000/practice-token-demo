@@ -546,7 +546,7 @@
       "typography": {
         "lg": {
           "value": {
-            "fontFamily": "{font-face-base.mono}",
+            "fontFamily": "{font-face-base.serif}",
             "fontWeight": "{font-weight-base.medium}",
             "fontSize": "{font-size-label.lg}",
             "textCase": "none"
@@ -555,7 +555,7 @@
         },
         "sm": {
           "value": {
-            "fontFamily": "{font-face-base.mono}",
+            "fontFamily": "{font-face-base.serif}",
             "fontWeight": "{font-weight-base.medium}",
             "fontSize": "{font-size-label.xs}",
             "textCase": "none"
@@ -564,7 +564,7 @@
         }
       },
       "font-family": {
-        "value": "{font-face-base.mono}",
+        "value": "{font-face-base.serif}",
         "type": "fontFamilies"
       }
     },
