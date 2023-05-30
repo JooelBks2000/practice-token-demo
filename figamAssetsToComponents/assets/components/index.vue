@@ -10,20 +10,20 @@ import VariantprimaryStatedefaultSizelarge from './VariantprimaryStatedefaultSiz
 import VariantprimaryStatedefaultSizesmall from './VariantprimaryStatedefaultSizesmall.vue';
 import VariantsecondaryStatedefaultSizelarge from './VariantsecondaryStatedefaultSizelarge.vue';
 import VariantsecondaryStatedefaultSizesmall from './VariantsecondaryStatedefaultSizesmall.vue';
-import VariantTertiaryStatedefaultSizelarge from './VariantTertiaryStatedefaultSizelarge.vue';
-import VariantTertiaryStatedefaultSizesmall from './VariantTertiaryStatedefaultSizesmall.vue';
+import VarianttertiaryStatedefaultSizelarge from './VarianttertiaryStatedefaultSizelarge.vue';
+import VarianttertiaryStatedefaultSizesmall from './VarianttertiaryStatedefaultSizesmall.vue';
 import VariantsecondaryStatehoverSizelarge from './VariantsecondaryStatehoverSizelarge.vue';
 import VariantsecondaryStatehoverSizesmall from './VariantsecondaryStatehoverSizesmall.vue';
 import VariantprimaryStatehoverSizelarge from './VariantprimaryStatehoverSizelarge.vue';
 import VariantprimaryStatehoverSizesmall from './VariantprimaryStatehoverSizesmall.vue';
 import VariantsecondaryStatedisabledSizelarge from './VariantsecondaryStatedisabledSizelarge.vue';
 import VariantsecondaryStatedisabledSizesmall from './VariantsecondaryStatedisabledSizesmall.vue';
-import VariantTertiaryStatehoverSizelarge from './VariantTertiaryStatehoverSizelarge.vue';
-import VariantTertiaryStatehoverSizesmall from './VariantTertiaryStatehoverSizesmall.vue';
+import VarianttertiaryStatehoverSizelarge from './VarianttertiaryStatehoverSizelarge.vue';
+import VarianttertiaryStatehoverSizesmall from './VarianttertiaryStatehoverSizesmall.vue';
 import VariantprimaryStatedisabledSizelarge from './VariantprimaryStatedisabledSizelarge.vue';
 import VariantprimaryStatedisabledSizesmall from './VariantprimaryStatedisabledSizesmall.vue';
-import VariantTertiaryStatedisabledSizelarge from './VariantTertiaryStatedisabledSizelarge.vue';
-import VariantTertiaryStatedisabledSizesmall from './VariantTertiaryStatedisabledSizesmall.vue';
+import VarianttertiaryStatedisabledSizelarge from './VarianttertiaryStatedisabledSizelarge.vue';
+import VarianttertiaryStatedisabledSizesmall from './VarianttertiaryStatedisabledSizesmall.vue';
 import Group8612 from './Group8612.vue';
 
 const props = defineProps<{
@@ -32,20 +32,20 @@ const props = defineProps<{
       | 'VariantprimaryStatedefaultSizesmall'
       | 'VariantsecondaryStatedefaultSizelarge'
       | 'VariantsecondaryStatedefaultSizesmall'
-      | 'VariantTertiaryStatedefaultSizelarge'
-      | 'VariantTertiaryStatedefaultSizesmall'
+      | 'VarianttertiaryStatedefaultSizelarge'
+      | 'VarianttertiaryStatedefaultSizesmall'
       | 'VariantsecondaryStatehoverSizelarge'
       | 'VariantsecondaryStatehoverSizesmall'
       | 'VariantprimaryStatehoverSizelarge'
       | 'VariantprimaryStatehoverSizesmall'
       | 'VariantsecondaryStatedisabledSizelarge'
       | 'VariantsecondaryStatedisabledSizesmall'
-      | 'VariantTertiaryStatehoverSizelarge'
-      | 'VariantTertiaryStatehoverSizesmall'
+      | 'VarianttertiaryStatehoverSizelarge'
+      | 'VarianttertiaryStatehoverSizesmall'
       | 'VariantprimaryStatedisabledSizelarge'
       | 'VariantprimaryStatedisabledSizesmall'
-      | 'VariantTertiaryStatedisabledSizelarge'
-      | 'VariantTertiaryStatedisabledSizesmall'
+      | 'VarianttertiaryStatedisabledSizelarge'
+      | 'VarianttertiaryStatedisabledSizesmall'
       | 'Group8612'
   ;
   width?: string | number;
@@ -57,20 +57,20 @@ const config = {
   'VariantprimaryStatedefaultSizesmall': VariantprimaryStatedefaultSizesmall,
   'VariantsecondaryStatedefaultSizelarge': VariantsecondaryStatedefaultSizelarge,
   'VariantsecondaryStatedefaultSizesmall': VariantsecondaryStatedefaultSizesmall,
-  'VariantTertiaryStatedefaultSizelarge': VariantTertiaryStatedefaultSizelarge,
-  'VariantTertiaryStatedefaultSizesmall': VariantTertiaryStatedefaultSizesmall,
+  'VarianttertiaryStatedefaultSizelarge': VarianttertiaryStatedefaultSizelarge,
+  'VarianttertiaryStatedefaultSizesmall': VarianttertiaryStatedefaultSizesmall,
   'VariantsecondaryStatehoverSizelarge': VariantsecondaryStatehoverSizelarge,
   'VariantsecondaryStatehoverSizesmall': VariantsecondaryStatehoverSizesmall,
   'VariantprimaryStatehoverSizelarge': VariantprimaryStatehoverSizelarge,
   'VariantprimaryStatehoverSizesmall': VariantprimaryStatehoverSizesmall,
   'VariantsecondaryStatedisabledSizelarge': VariantsecondaryStatedisabledSizelarge,
   'VariantsecondaryStatedisabledSizesmall': VariantsecondaryStatedisabledSizesmall,
-  'VariantTertiaryStatehoverSizelarge': VariantTertiaryStatehoverSizelarge,
-  'VariantTertiaryStatehoverSizesmall': VariantTertiaryStatehoverSizesmall,
+  'VarianttertiaryStatehoverSizelarge': VarianttertiaryStatehoverSizelarge,
+  'VarianttertiaryStatehoverSizesmall': VarianttertiaryStatehoverSizesmall,
   'VariantprimaryStatedisabledSizelarge': VariantprimaryStatedisabledSizelarge,
   'VariantprimaryStatedisabledSizesmall': VariantprimaryStatedisabledSizesmall,
-  'VariantTertiaryStatedisabledSizelarge': VariantTertiaryStatedisabledSizelarge,
-  'VariantTertiaryStatedisabledSizesmall': VariantTertiaryStatedisabledSizesmall,
+  'VarianttertiaryStatedisabledSizelarge': VarianttertiaryStatedisabledSizelarge,
+  'VarianttertiaryStatedisabledSizesmall': VarianttertiaryStatedisabledSizesmall,
   'Group8612': Group8612,
 };
 
@@ -83,9 +83,9 @@ const list = [
   
   'VariantsecondaryStatedefaultSizesmall',
   
-  'VariantTertiaryStatedefaultSizelarge',
+  'VarianttertiaryStatedefaultSizelarge',
   
-  'VariantTertiaryStatedefaultSizesmall',
+  'VarianttertiaryStatedefaultSizesmall',
   
   'VariantsecondaryStatehoverSizelarge',
   
@@ -99,17 +99,17 @@ const list = [
   
   'VariantsecondaryStatedisabledSizesmall',
   
-  'VariantTertiaryStatehoverSizelarge',
+  'VarianttertiaryStatehoverSizelarge',
   
-  'VariantTertiaryStatehoverSizesmall',
+  'VarianttertiaryStatehoverSizesmall',
   
   'VariantprimaryStatedisabledSizelarge',
   
   'VariantprimaryStatedisabledSizesmall',
   
-  'VariantTertiaryStatedisabledSizelarge',
+  'VarianttertiaryStatedisabledSizelarge',
   
-  'VariantTertiaryStatedisabledSizesmall',
+  'VarianttertiaryStatedisabledSizesmall',
   
   'Group8612',
   ]
