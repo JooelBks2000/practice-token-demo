@@ -11,7 +11,7 @@ jobs:
       - run: npm install
       - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/base.json base
       - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/ves.json base,ves base --expandTypography=true
-      - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/cfm.json base,cfm base --expandTypography=true
+      - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/naruto.json base,naruto base --expandTypography=true
       - run: node figamTokensToCss/build.js
       - run: npx ts-node figamAssetsToComponents/generate.ts
       - uses: stefanzweifel/git-auto-commit-action@v4
