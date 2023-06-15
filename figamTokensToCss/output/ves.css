@@ -19,4 +19,24 @@
   --color-disabled-text: #a3a3a3;
   --color-disabled-background: #f5f5f5;
   --color-disabled-border: #adadad;
+  --color-main-default: #365ed5;
+  --color-main-label: #365ed5;
+  --color-main-bg: #ffffff;
+  --color-main-text: #000000;
+  --color-main-main: #F3F7FA;
+  --color-main-un-start: #1c1c2399;
+  --color-main-going: #E1C564;
+  --color-main-sign: #4A63D8;
+  --color-main-title-label: #1c1c2399;
+  --bg-bg-home: https://s2.loli.net/2023/06/15/Het32gdVTwzrLMP.png;
+  --bg-bg-title: https://s2.loli.net/2023/06/15/by2hW1Yz6EtlqXn.png;
+  --bg-bg-title-icon: https://s2.loli.net/2023/06/15/HyA5f8bWJIsFlzp.png;
+  --bg-bg-footer: https://s2.loli.net/2023/06/15/9VmZci7L8GARTag.png;
+  --bg-bg-card: https://s2.loli.net/2023/06/15/nuvoBybZ8fPeQih.png;
+  --bg-bg-default-banner: https://s2.loli.net/2023/06/15/sl1ZEjCXrQiLdvV.png;
+  --bg-bg-tournament: https://s2.loli.net/2023/06/15/ltZ2pfqgQW5czJM.png;
+  --bg-bg-mine: https://s2.loli.net/2023/06/15/jmSTrziP7sHM9WK.png;
+  --label-width-default: 8px;
+  --label-height-default: 36px;
+  --title-width: 694px;
       }

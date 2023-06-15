@@ -94,5 +94,93 @@
       "value": "#adadad",
       "type": "color"
     }
+  },
+  "color-main": {
+    "default": {
+      "value": "#365ed5",
+      "type": "color"
+    },
+    "label": {
+      "value": "#365ed5",
+      "type": "color"
+    },
+    "bg": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "text": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "main": {
+      "value": "#F3F7FA",
+      "type": "color"
+    },
+    "unStart": {
+      "value": "#1c1c2399",
+      "type": "color"
+    },
+    "going": {
+      "value": "#E1C564",
+      "type": "color"
+    },
+    "sign": {
+      "value": "#4A63D8",
+      "type": "color"
+    },
+    "title-label": {
+      "value": "#1c1c2399",
+      "type": "color"
+    }
+  },
+  "bg-bg": {
+    "home": {
+      "value": "https://s2.loli.net/2023/06/15/Het32gdVTwzrLMP.png",
+      "type": "asset"
+    },
+    "title": {
+      "value": "https://s2.loli.net/2023/06/15/by2hW1Yz6EtlqXn.png",
+      "type": "asset"
+    },
+    "title-icon": {
+      "value": "https://s2.loli.net/2023/06/15/HyA5f8bWJIsFlzp.png",
+      "type": "asset"
+    },
+    "footer": {
+      "value": "https://s2.loli.net/2023/06/15/9VmZci7L8GARTag.png",
+      "type": "asset"
+    },
+    "card": {
+      "value": "https://s2.loli.net/2023/06/15/nuvoBybZ8fPeQih.png",
+      "type": "asset"
+    },
+    "default-banner": {
+      "value": "https://s2.loli.net/2023/06/15/sl1ZEjCXrQiLdvV.png",
+      "type": "asset"
+    },
+    "tournament": {
+      "value": "https://s2.loli.net/2023/06/15/ltZ2pfqgQW5czJM.png",
+      "type": "asset"
+    },
+    "mine": {
+      "value": "https://s2.loli.net/2023/06/15/jmSTrziP7sHM9WK.png",
+      "type": "asset"
+    }
+  },
+  "label-width": {
+    "default": {
+      "value": "8px",
+      "type": "sizing"
+    }
+  },
+  "label-height": {
+    "default": {
+      "value": "36px",
+      "type": "sizing"
+    }
+  },
+  "title-width": {
+    "value": "694px",
+    "type": "sizing"
   }
 }
