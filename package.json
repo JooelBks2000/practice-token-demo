@@ -6,7 +6,7 @@
   "scripts": {
     "buildStyles": "node ./figamTokensToCss/build.js",
     "buildSvgComponents": "ts-node ./figamAssetsToComponents/generate.ts",
-    "figus":"npx @figus/cli",
+    "figus": "npx @figus/cli",
     "clean": "rm -rf output"
   },
   "repository": {
@@ -38,7 +38,7 @@
     "react": "17.0.2",
     "ts-node": "10.4.0",
     "typescript": "4.5.4",
-    "xml2js": "^0.4.23"
+    "xml2js": "^0.6.0"
   },
   "devDependencies": {
     "@figus/cli": "^2.0.8",
@@ -47,7 +47,7 @@
     "esno": "^0.9.1",
     "figma-api-exporter": "^0.0.2",
     "light-server": "2.9.1",
-    "nodemon": "1.18.4",
+    "nodemon": "^2.0.22",
     "style-dictionary": "^3.7.2",
     "vue": "3.2.47"
   }
