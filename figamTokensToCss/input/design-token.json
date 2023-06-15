@@ -581,9 +581,27 @@
         "value": "{color-base-neutral-light.20}",
         "type": "color"
       }
+    },
+    "color-main": {
+      "default": {
+        "value": "{color-base-blue.50}",
+        "type": "color"
+      },
+      "label": {
+        "value": "{color-base-blue.50}",
+        "type": "color"
+      },
+      "bg": {
+        "value": "{color-base-neutral-light.100}",
+        "type": "color"
+      },
+      "text": {
+        "value": "{color-base-neutral-dark.100}",
+        "type": "color"
+      }
     }
   },
-  "cfm": {
+  "naruto": {
     "color-primary": {
       "default": {
         "value": "{color-base-blue.60}",
@@ -661,6 +679,24 @@
         "value": "{color-base-neutral-light.20}",
         "type": "color"
       }
+    },
+    "color-main": {
+      "default": {
+        "value": "{color-test.ci-trigger}",
+        "type": "color"
+      },
+      "labe": {
+        "value": "#890000",
+        "type": "color"
+      },
+      "bg": {
+        "value": "{color-base-neutral-dark.100}",
+        "type": "color"
+      },
+      "text": {
+        "value": "{color-base-neutral-light.100}",
+        "type": "color"
+      }
     }
   },
   "$themes": [],
@@ -668,7 +704,7 @@
     "tokenSetOrder": [
       "base",
       "ves",
-      "cfm"
+      "naruto"
     ]
   }
 }
