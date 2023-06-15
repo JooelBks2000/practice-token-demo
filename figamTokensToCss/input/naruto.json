@@ -1,0 +1,186 @@
+{
+  "color-primary": {
+    "default": {
+      "value": "#1341cd",
+      "type": "color"
+    },
+    "hover": {
+      "value": "#0a2471",
+      "type": "color"
+    },
+    "disabled": {
+      "value": "#e0c2dd",
+      "type": "color"
+    }
+  },
+  "button": {
+    "radius": {
+      "value": "4px",
+      "type": "borderRadius"
+    },
+    "padding": {
+      "left": {
+        "value": "16px",
+        "type": "spacing"
+      },
+      "right": {
+        "value": "16px",
+        "type": "spacing"
+      }
+    },
+    "height": {
+      "lg": {
+        "value": "36px",
+        "type": "sizing"
+      },
+      "sm": {
+        "value": "24px",
+        "type": "sizing"
+      }
+    },
+    "typography": {
+      "lg": {
+        "fontFamily": {
+          "value": "'Inter', Helvetica, Arial, sans-serif",
+          "type": "fontFamilies"
+        },
+        "fontWeight": {
+          "value": 400,
+          "type": "fontWeights"
+        },
+        "fontSize": {
+          "value": "16px",
+          "type": "fontSizes"
+        },
+        "textCase": {
+          "value": "none",
+          "type": "textCase"
+        }
+      },
+      "sm": {
+        "fontFamily": {
+          "value": "'Inter', Helvetica, Arial, sans-serif",
+          "type": "fontFamilies"
+        },
+        "fontWeight": {
+          "value": 400,
+          "type": "fontWeights"
+        },
+        "fontSize": {
+          "value": "12px",
+          "type": "fontSizes"
+        },
+        "textCase": {
+          "value": "none",
+          "type": "textCase"
+        }
+      }
+    },
+    "font-family": {
+      "value": "'Inter', Helvetica, Arial, sans-serif",
+      "type": "fontFamilies"
+    }
+  },
+  "color-disabled": {
+    "text": {
+      "value": "#a3a3a3",
+      "type": "color"
+    },
+    "background": {
+      "value": "#f5f5f5",
+      "type": "color"
+    },
+    "border": {
+      "value": "#adadad",
+      "type": "color"
+    }
+  },
+  "color-main": {
+    "default": {
+      "value": "orange",
+      "type": "color"
+    },
+    "label": {
+      "value": "#EBEBF5",
+      "type": "color"
+    },
+    "bg": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "text": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "main": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "unStart": {
+      "value": "#ebebf599",
+      "type": "color"
+    },
+    "going": {
+      "value": "#890000",
+      "type": "color"
+    },
+    "sign": {
+      "value": "#1C1C1D",
+      "type": "color"
+    },
+    "title-label": {
+      "value": "#ebebf599",
+      "type": "color"
+    }
+  },
+  "bg-bg": {
+    "title-icon": {
+      "value": "https://s2.loli.net/2023/06/15/HgwoRZjrOSUt7u4.png",
+      "type": "asset"
+    },
+    "footer": {
+      "value": "https://s2.loli.net/2023/06/15/tEWnIJS5pPNbALK.png",
+      "type": "asset"
+    },
+    "title": {
+      "value": "https://s2.loli.net/2023/06/15/4pHYOrRQWbaXkqU.png",
+      "type": "asset"
+    },
+    "card": {
+      "value": "https://s2.loli.net/2023/06/15/q8vSNGToAXDbl5y.png",
+      "type": "asset"
+    },
+    "default-banner": {
+      "value": "https://s2.loli.net/2023/06/15/G6Ocadfe3MYyVHD.png",
+      "type": "asset"
+    },
+    "tournament": {
+      "value": "https://s2.loli.net/2023/06/15/nS7reW8haG2isCZ.png",
+      "type": "asset"
+    },
+    "mine": {
+      "value": "https://s2.loli.net/2023/06/15/istxbzQRwh6j9qB.png",
+      "type": "asset"
+    },
+    "home": {
+      "value": "https://s2.loli.net/2023/06/15/nPdiSqDZkcKh6zy.png",
+      "type": "asset"
+    }
+  },
+  "label-width": {
+    "default": {
+      "value": "120px",
+      "type": "sizing"
+    }
+  },
+  "label-height": {
+    "default": {
+      "value": "74px",
+      "type": "sizing"
+    }
+  },
+  "title-width": {
+    "value": "799px",
+    "type": "sizing"
+  }
+}
