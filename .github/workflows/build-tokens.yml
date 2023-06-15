@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
-      - run: npm install
+      - run: yarn install
       - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/base.json base
       - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/ves.json base,ves base --expandTypography=true
       - run: npx token-transformer figamTokensToCss/input/design-token.json figamTokensToCss/input/naruto.json base,naruto base --expandTypography=true
