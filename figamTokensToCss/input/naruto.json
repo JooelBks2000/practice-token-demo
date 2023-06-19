@@ -156,7 +156,8 @@
     },
     "tournament": {
       "value": "https://s2.loli.net/2023/06/15/nS7reW8haG2isCZ.png",
-      "type": "asset"
+      "type": "asset",
+      "description": "测试"
     },
     "mine": {
       "value": "https://s2.loli.net/2023/06/15/istxbzQRwh6j9qB.png",
