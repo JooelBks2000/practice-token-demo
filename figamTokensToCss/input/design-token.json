@@ -608,7 +608,7 @@
         "type": "color"
       },
       "going": {
-        "value": "#E1C564",
+        "value": "{color-base-red.80}",
         "type": "color"
       },
       "sign": {
